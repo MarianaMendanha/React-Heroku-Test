@@ -1,0 +1,67 @@
+/* NavBar.css */
+.navbar {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 30px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    height: 97px;
+    box-shadow: 0 5px 30px 1px rgba(63, 63, 63, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, color */
+}
+
+.navbar-logo {
+    background-color: aliceblue;
+    margin-left: 24px;
+    /* Estilos para o logo */
+}
+
+.navbar-items {
+    background-color: aliceblue;
+    /* Estilos para outros itens de navegação */
+}
+
+.search-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 24px;
+} 
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #a6adb5;
+    /* padding-right: 34px; */
+    cursor: pointer;
+    transition: transform 0.4s ease; 
+}
+
+.navbar-divider {
+    height: 50px;
+    width: 1px;
+    background-color: #e1e1e1;
+    margin-right: 24px;
+    
+}
+
+.navbar-search:hover {
+    transform: rotate(45deg); /* Rotação do ícone ao passar o mouse */
+    transform-origin: center;
+}
+
+/* Estilos adicionais para responsividade e alinhamento podem ser adicionados conforme necessário */
+@media screen and (max-width: 768px) {
+    .navbar {
+        background-color: aliceblue;
+        /* Estilos para navbar em telas menores */
+    }
+
+    .navbar-logo, .navbar-items, .navbar-search {
+        background-color: aliceblue;
+        /* Estilos específicos para elementos em telas menores */
+    }
+}

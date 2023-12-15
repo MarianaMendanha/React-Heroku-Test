@@ -1,0 +1,156 @@
+
+.main-content {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Alinha os filhos verticalmente */
+    align-items: stretch;
+    justify-content: flex-start; /* Opcional: Alinha os filhos ao topo do container */
+    flex-wrap: wrap;
+    width: 100%; /* Ocupa a largura total da viewport */
+    /* max-width: 2400px; Limita a largura máxima e centraliza o conteúdo */
+    margin: 0; /* Centraliza a div main-content na viewport */
+    padding: 1rem; /* Adiciona algum espaço interno */
+    box-sizing: border-box; /* Inclui padding na largura e altura */
+}
+
+/* Adicione estilos para os filhos diretamente se necessário */
+.main-content > * {
+    width: 100%; /* Faz cada filho ocupar 100% da largura do .main-content */
+    /* max-width: 2400px; Assegura que nenhum filho seja mais largo do que o .main-content */
+    /* margin-bottom: 1rem; */
+}
+
+/* No final, não se esqueça de remover a margem do último filho para evitar espaços extras */
+.main-content > *:last-child {
+    margin-bottom: 0;
+}
+
+
+.dashboard-header {
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-header-text {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    color: #5A5C69;
+}
+
+
+/* Dropdown Container Styles */
+.dropdown-container {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Estilo individual dos dropdowns */
+.dropdown1, .dropdown2 {
+    width: 40%; /* Ajusta o tamanho base dos dropdowns para que ocupem aproximadamente metade do espaço disponível */
+}
+
+/* Você pode querer adicionar media queries para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    .dropdown-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown1, .dropdown2 {
+        width: 100%; /* Em telas menores, cada dropdown ocupa a largura 80% do contêiner */
+    }
+}
+
+
+.periodo-consolidado {
+    /* background-color: lightsalmon; */
+    display: flex;
+    justify-content: center;
+    color: #858796;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between; /* Isso distribui espaço uniformemente entre os cartões */
+    max-width: 100%; /* Isso garante que o card não seja maior do que a largura da tela */
+    pad: 0 10px 0 10px; /* Isso centraliza o card se ele for menor do que a largura da tela */
+    /* background-color: blueviolet;  */
+} 
+
+
+
+.card-barra-progresso {
+    max-width: 100%;
+    /* background-color: burlywood; */
+    padding: 0 20px 0 20px;
+    margin: 20px 0 20px 0;
+}
+
+
+
+.chart-container {
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between; /* Isso distribui espaço uniformemente entre os gráficos */
+    align-items: flex-start;
+    padding: 10px 0 10px 0;
+    height: auto;
+    max-width: 100%; /* Isso garante que o card não seja maior do que a largura da tela */
+    margin: 0; /* Isso centraliza o card se ele for menor do que a largura da tela */
+    
+    /*gap: 0.05rem; /* Isso adiciona espaço entre os gráficos */
+}
+
+.chart-barra,
+.chart-pizza {
+    /* Se necessário, defina uma largura específica ou deixe flexível */
+    flex-grow: 0.8;
+    height: auto;
+}
+
+.chart-barra {
+    /* max-width: 70%; Isso garante que o card não seja maior do que a largura da tela */
+    /* margin: 10px; */
+    margin-bottom: 20px;
+    max-width: 70%;
+    /* flex: 2; O gráfico de barras ocupa 2 partes do espaço */
+    /* background-color: brown; */
+}
+
+.chart-pizza {
+    /* max-width: 30%; Isso garante que o card não seja maior do que a largura da tela */
+    /* margin: 10px; */
+    max-width: 28%;
+    /* flex: 1; O gráfico de pizza ocupa 1 parte do espaço */
+    /* background-color: chocolate; */
+}
+
+@media (max-width: 1000px) {
+    .chart-container {
+        flex-direction: column; /* Em telas menores, os gráficos serão empilhados verticalmente */
+        justify-content: flex-start; /* Isso distribui espaço uniformemente entre os gráficos */
+        align-items: flex-start;
+    }
+
+    .chart-barra {
+        /* flex-grow: 0; Impede que os gráficos cresçam em telas menores */
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .chart-pizza {
+        flex-grow: 0; /* Impede que os gráficos cresçam em telas menores */
+        /* width: 55%;  */
+    }
+}
+

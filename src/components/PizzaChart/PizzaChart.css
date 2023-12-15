@@ -1,0 +1,30 @@
+.pizza-chart-card {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #EAECF4;
+    min-height: 265px;
+    min-width: 280px;
+}
+
+.pizza-card-header {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #F8F9FC;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: #4E73DF;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #EAECF4; /* Linha separadora */
+    margin-bottom: 15px;
+    padding: 16px;
+}
+
+.chart-container-pizza {
+    /* position: relative; */
+    padding-bottom: 16px;
+    /* max-height: 300px; */
+}

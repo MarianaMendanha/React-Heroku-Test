@@ -1,0 +1,25 @@
+.scroll-to-top-button {
+    position: fixed; /* Posição fixa na tela */
+    bottom: 20px; /* Posicionado na parte inferior da tela */
+    right: 20px; /* Posicionado à direita */
+    background-color: #c8c8c8; /* Cor de fundo como na imagem */
+    border: none; /* Sem borda */
+    border-radius: 50%; /* Borda arredondada para fazer um círculo */
+    display: flex; /* Utiliza flexbox para centralizar o ícone */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    cursor: pointer; /* Cursor como ponteiro */
+    width: 40px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  */
+}
+
+.scroll-to-top-button:hover {
+    background-color: #acacac;
+}
+
+.icon-top-scroll {
+    color: white;
+    font-size: medium;
+}

@@ -1,0 +1,86 @@
+/* components/SideBar/SideBar.css */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#09444d, #6ec1dd); /* Degrade vertical */
+    width: 230px; 
+    height: auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar-logo-link {
+    width: 70%;
+    cursor: pointer; 
+}
+.sidebar-logo {
+    width: 100%; /* Largura total do elemento */
+    /* cursor: pointer; Cursor como ponteiro para indicar clique */
+    margin-bottom: 5px; /* Espaçamento abaixo do logo */
+}
+
+.sidebar-divider {
+    background-color: #2E6067;
+    height: 1px; /* Altura do divisor */
+    width: 100%; /* Largura do divisor */
+    margin: 10px; /* Margem vertical para espaçamento */
+    margin-bottom: 10px;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+}
+
+.sidebar-item {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: bold; /* Torna a fonte mais grossa */
+    font-size: 15px; /* Aumenta o tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento vertical */
+    cursor: pointer; /* Cursor como ponteiro */
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.sidebar-item-icon {
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+/* Estilos CSS para o botão e o ícone */
+.sidebar-back-button {
+    width: 35px; /* Largura fixa para tornar o botão redondo */
+    height: 35px; /* Altura igual à largura para tornar o botão redondo */
+    background-color: #549198; /* Cor de fundo do botão (pode ajustar conforme necessário) */
+    border-radius: 50%; /* Arredondar o botão */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.1s ease; /* Efeito de transição suave */
+    margin: 10px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #447e85;
+    cursor: pointer;
+}
+
+
+
+.sidebar-back-button:hover {
+    background-color: #5dc1cd; /* Cor de fundo quando passar o mouse (pode ajustar conforme necessário) */
+}
+
+.arrow-icon {
+    font-family: 'Nunito', sans-serif; 
+    font-weight: bold;
+    font-size: 20px; /* Tamanho do ícone (pode ajustar conforme necessário) */
+    margin-right: 2px; /* Espaçamento entre o ícone e o texto (pode ajustar conforme necessário) */
+}

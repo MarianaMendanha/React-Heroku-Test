@@ -1,0 +1,32 @@
+.chart-card {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #EAECF4;
+    min-height: 280px;
+    min-width: 400px;
+}
+
+.chart-title {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #F8F9FC;
+    padding: 16px;
+    color: #4E73DF;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #EAECF4; /* Linha separadora */
+    text-align: center;
+}
+
+.chart-content {
+    padding: 20px;
+    color: #858796;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    min-height: 200px;
+    min-width: 360px;
+}

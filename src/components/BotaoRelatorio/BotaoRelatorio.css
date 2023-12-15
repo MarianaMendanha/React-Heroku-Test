@@ -1,0 +1,26 @@
+.botao-relatorio {
+    height: 40px;
+    width: 170px;
+    margin-right: 24px;
+    background-color: #4E73DF; /* Cor de fundo azul */
+    color: white; /* Texto em branco */
+    padding: 10px 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor em forma de mãozinha */
+    display: flex; /* Adicionado para alinhar ícone e texto */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: center; /* Alinha itens horizontalmente */
+    transition: background-color 0.3s;
+}
+
+.botao-relatorio:hover {
+background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.botao-relatorio .fa-download {
+font-size: 1.2em;
+margin-right: 7px; /* Espaço entre ícone e texto */
+color: #A7B9EF; /* Cor do ícone */
+}

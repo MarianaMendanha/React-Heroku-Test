@@ -1,0 +1,29 @@
+.footer {
+    margin: 0;
+    width: 100%; /* Estende o footer por toda a largura da tela */
+    background-color: #ffffff; /* Fundo branco */
+    /* box-shadow: 0 -0.8px 10px rgba(0, 0, 0, 0.2); */
+    display: flex; /* Usa flexbox para alinhar conteúdo e botão */
+    justify-content: center; /* Distribui o espaço entre conteúdo e botão */
+    align-items: center; /* Centraliza verticalmente */
+    /* padding: 0.5rem 1rem; */
+    height: 75px;
+}
+
+.footer-content {
+    font-size: 0.8rem; /* Tamanho do texto */
+    color: #ACADB4;
+}
+
+.top-button {
+    background: none; /* Sem fundo para parecer um botão plano */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 1.5rem; /* Tamanho do ícone do botão */
+    padding: 0.5rem; /* Espaçamento interno */
+    transition: background-color 0.3s ease; /* Transição suave de fundo */
+}
+
+.top-button:hover {
+    background-color: #f0f0f0; /* Cor de fundo leve ao passar o mouse */
+}

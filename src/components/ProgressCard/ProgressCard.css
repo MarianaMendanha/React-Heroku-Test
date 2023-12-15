@@ -1,0 +1,68 @@
+/* ProgressCard.css */
+.progress-card {
+    overflow-x: auto; /* Isso permite rolagem horizontal se o conteúdo for muito largo */
+    max-width: 100%; /* Isso garante que o card não seja maior do que a largura da tela */
+    margin: auto; /* Isso centraliza o card se ele for menor do que a largura da tela */
+    box-sizing: border-box; /* Isso faz com que o padding e a borda sejam incluídos no cálculo da largura/altura */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* margin: 10px; */
+    width: 100%; /* Ou uma largura específica se necessário */
+    border: 1px solid #EAECF4;
+}
+
+@media screen and (max-width: 768px) {
+    .progress-card {
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
+    /* Restante do seu CSS para telas pequenas */
+}
+
+.progress-card-header {
+    background-color: #F8F9FC;
+    font-family: 'Nunito', sans-serif;
+    color: #4E73DF;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espaço abaixo do título */
+    border-bottom: 1px solid #EAECF4; /* Linha separadora */
+    padding: 16px;
+}
+
+.progress-card-content {
+    padding: 16px;
+}
+
+.card-footer {
+    color: #858796;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px; /* Ajuste o espaço entre o subtítulo e a barra de progresso */
+}
+
+.progress-bar-background {
+    background-color: #EAECF4;
+    border-radius: 8px;
+    height: 20px;
+    width: 100%;
+    position: relative; /* Permite que o texto seja posicionado em relação a este elemento */
+}
+
+.progress-bar-fill {
+    background-color: #4E73DF;
+    border-radius: 8px;
+    height: 100%;
+    line-height: 20px; /* Altura igual à da barra de progresso para centralizar o texto */
+    color: white;
+    text-align: right;
+    padding-right: 5px; /* Espaço para o texto não ficar grudado no lado direito */
+    position: absolute; /* Posiciona em relação ao seu primeiro pai relativo/absoluto */
+    top: 0;
+    left: 0;
+}
+
+.progress-bar-text {
+    font-weight: bold;
+    margin-left: 10px; /* Se o texto deve ser dentro da barra, adicione um espaçamento esquerdo */
+}

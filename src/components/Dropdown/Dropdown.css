@@ -1,0 +1,56 @@
+/* Dropdown.css */
+.dropdown {
+    position: relative; /* Permite posicionar absolutamente o pseudo-elemento dentro */
+    width: 100%; /* Ocupa a largura total do contêiner */
+    display: flex; /* Usado para centralizar verticalmente o label e o select */
+    flex-direction: column; /* Organiza o label e o select em uma coluna */
+    align-items: center; /* Centraliza os elementos no eixo cruzado */
+}
+
+.dropdown label {
+    font-size: 1rem; /* Define o tamanho da fonte do label */
+    margin-bottom: 0.5rem; /* Espaço entre o label e o select */
+}
+
+.dropdown-icon {
+    color: #8a8a8a;
+    position: absolute; /* Posicionamento absoluto em relação ao seu pai .dropdown */
+    right: 20px; /* Distância do lado direito do dropdown */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centralizar exatamente */
+    pointer-events: none; /* Isso fará com que o clique no ícone passe para o elemento abaixo dele */
+  }
+
+.dropdown select {
+    color:#8a8a8a;
+    width: 100%; /* Define o select para ocupar 80% da largura do contêiner */
+    padding: 10px 30px 10px 20px; /* Aumenta o padding e deixa espaço para o ícone da seta */
+    font-size: 1.08rem; /* Tamanho da fonte dentro do select */
+    border: 1px solid #ccc; /* Cor da borda do select */
+    border-radius: 8px; /* Bordas arredondadas */
+    -webkit-appearance: none; /* Desativa o estilo padrão para navegadores WebKit/Blink */
+    -moz-appearance: none; /* Desativa o estilo padrão para o Firefox */
+    appearance: none; /* Desativa o estilo padrão do select */
+    background-color: #fff; /* Cor de fundo do select */
+    cursor: pointer; /* Muda o cursor para indicar que o select é clicável */
+}
+
+/* Estilos adicionais para o foco */
+.dropdown select:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Remove a seleção de texto para melhorar a aparência no IE */
+.dropdown select {
+    -webkit-user-select: none; /* Desativa a seleção de texto no Chrome/Safari */
+    -moz-user-select: none; /* Desativa a seleção de texto no Firefox */
+    -ms-user-select: none; /* Desativa a seleção de texto no IE10+ */
+    user-select: none; /* Desativa a seleção de texto no nível do padrão */
+}
+
+/* Media query para ajustar o layout em telas menores, se necessário */
+@media (max-width: 768px) {
+    .dropdown select {
+        width: 100%; /* Em telas menores, o select pode ocupar 100% */
+    }
+}

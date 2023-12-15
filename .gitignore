@@ -1,0 +1,21 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar a pasta build (arquivos de produção)
+build/
+
+# Ignorar o arquivo .env (variáveis de ambiente sensíveis)
+.env
+
+# Ignorar logs de erro do Yarn ou NPM
+yarn-error.log
+npm-debug.log
+
+# Ignorar arquivos .DS_Store (para usuários macOS)
+.DS_Store
+
+# Ignorar arquivos Thumbs.db (para usuários Windows)
+Thumbs.db
+
+# Ignorar a pasta de logs do aplicativo (se aplicável)
+logs/
